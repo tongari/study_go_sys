@@ -13,14 +13,15 @@ import (
 	"net/http"
 )
 
-// func main() {
-// 	// file, err := os.Create("test.txt")
-// 	// if err != nil {
-// 	// 	panic(err)
-// 	// }
+func main() {
+	file, err := os.Create("test.txt")
+	if err != nil {
+		panic(err)
+	}
 
-// 	// file.Write([]byte("日本語書き込み\n"))
-// 	// file.Close()
+	file.Write([]byte("日本語書き込み\n"))
+	file.Close()
+}
 
 // 	// os.Stdout.Write([]byte("os.Stdout example\n"))
 
